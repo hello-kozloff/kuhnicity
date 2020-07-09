@@ -1,0 +1,109 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.product-card
+  display: inline-block
+  width: 100%
+
+  transition: .25s ease-out
+  text-decoration: none
+  outline: none
+
+  &:hover,
+  &:focus
+    .product-card__button
+      opacity: 1
+
+    .product-card__thumbnail-image
+      opacity: .4
+
+.product-card__thumbnail
+  position: relative
+  max-width: 600px
+  height: 700px
+
+  display: flex
+  justify-content: center
+
+  overflow: hidden
+
+.product-card__status
+  position: absolute
+  z-index: 10
+
+  top: 0
+  left: 0
+
+  padding: 10px 28px
+
+  color: $color-white
+  font-size: 19px
+  line-height: 23px
+  letter-spacing: .2em
+  text-transform: uppercase
+
+  &_variant
+    &_sale
+      background-color: #FF9900
+
+    &_hit
+      background-color: #ff3d00
+
+    &_new
+      background-color: #F5EEE4
+
+.product-card__button
+  position: absolute
+  z-index: 20
+
+  bottom: 180px
+
+  padding: 35px 110px
+
+  color: #323232
+  font-size: 25px
+  line-height: 120%
+  letter-spacing: .105em
+
+  border: 1px solid #323232
+
+  opacity: 0
+  transition: .25s ease-out
+
+.product-card__thumbnail-image
+  position: absolute
+
+  width: auto
+  height: 100%
+
+  margin: auto
+  transition: .25s ease-out
+
+.product-card__header
+  margin-top: 8px
+  box-sizing: border-box
+
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.product-card__name,
+.product-card__price
+  color: #323232
+  font-size: 28px
+  line-height: 120%
+  letter-spacing: .105em
+  text-transform: uppercase
+
+  transition: .25s ease-out
+
+.product-card__price
+  text-align: right
+
+.product-card__description
+  margin-top: 3px
+
+  color: #323232
+  font-size: 20px
+  line-height: 140%
+  letter-spacing: .035em
