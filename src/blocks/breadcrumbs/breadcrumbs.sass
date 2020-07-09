@@ -1,0 +1,25 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  justify-content: center
+
+.breadcrumbs__route
+  display: flex
+
+  &:not(:last-child):after
+    content: ">"
+    padding: 0 10px
+
+.breadcrumbs__link
+  color: #404040
+
+  transition: .25s ease-out
+  text-decoration: none
+  outline: none
+
+  &:hover,
+  &:focus
+    color: #FF3D00
