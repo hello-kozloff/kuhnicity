@@ -1,0 +1,77 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.design-project
+  position: relative
+
+  padding: 85px 95px 190px 95px
+  box-sizing: border-box
+
+  margin-top: calc(98px + 90px)
+  margin-bottom: 100px
+
+  background-color: $color-white
+
+.design-project__quote
+  position: relative
+  max-width: 835px
+  width: 100%
+
+  padding: 110px 0
+
+  color: #494949
+  font-size: 25px
+  line-height: 140%
+  letter-spacing: .035em
+
+  &:before,
+  &:after
+    content: ""
+
+    position: absolute
+
+    width: 111px
+    height: 127px
+
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTExIiBoZWlnaHQ9IjEyNyIgdmlld0JveD0iMCAwIDExMSAxMjciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01OS40MTI1IDEyN0wyMy40NzUyIDYzLjc4ODZMNTkuNDEyNSAwSDM2LjIyNzJMMCA2My43ODg2TDM1LjkzNzMgMTI3SDU5LjQxMjVaTTExMC43MSAxMjdMNzQuNDgzIDYzLjc4ODZMMTExIDBIODcuNTI0OEw1MS4wMDc4IDYzLjc4ODZMODcuMjM1IDEyN0gxMTAuNzFaIiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjA4Ii8+Cjwvc3ZnPgo=")
+    background-size: cover
+
+  &:before
+    top: 20px
+    left: -42px
+
+  &:after
+    bottom: 0
+    right: 0
+
+    transform: rotate(180deg)
+
+.design-project__button
+  margin-top: 35px
+
+.design-project__author
+  position: absolute
+  right: 0
+  bottom: 0
+
+  padding-bottom: 86px
+  text-align: right
+
+.design-project__author-name
+  padding-right: 40px
+  margin-top: 49px
+
+  color: $color-black
+  font-size: 35px
+  line-height: 43px
+  letter-spacing: 0.07em
+  text-transform: uppercase
+
+.design-project__author-role
+  padding-right: 40px
+  margin-top: 10px
+
+  color: #A0A0A0
+  font-size: 20px
+  line-height: 120%
+  letter-spacing: .035em
