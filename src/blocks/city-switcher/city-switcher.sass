@@ -1,0 +1,44 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.city-switcher__header
+  padding: 0
+  border: none
+  cursor: pointer
+  outline: none
+
+  &:hover .city-switcher__current,
+  &:focus .city-switcher__current
+    color: $color-black
+
+.city-switcher__current
+  display: flex
+  align-items: center
+
+  color: #333333
+  font-family: 'Averta', sans-serif
+  font-size: 16px
+  line-height: 160%
+  letter-spacing: -.02em
+
+  transition: .25s ease-out
+
+  &:before
+    content: "•"
+
+    color: #FF3D00
+    font-size: 30px
+
+    margin-right: 11px
+
+  &:after
+    content: ""
+
+    display: inline-block
+    margin-left: 12px
+
+    width: 9px
+    height: 5px
+
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNSA1TDkgMSIgc3Ryb2tlPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=")
+    background-size: cover
