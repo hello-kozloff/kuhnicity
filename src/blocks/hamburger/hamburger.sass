@@ -1,0 +1,53 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.hamburger
+  display: flex
+  align-items: center
+
+  padding: 0
+  font-family: 'Averta', sans-serif
+  border: none
+  outline: none
+  cursor: pointer
+  background-color: transparent
+
+  &:hover .hamburger__text,
+  &:focus .hamburger__text
+    color: #FF3D00
+
+.hamburger__box
+  position: relative
+  display: inline-block
+  margin-right: 28px
+
+  width: 37px
+  height: 12px
+
+  span
+    position: absolute
+    left: 0
+    right: 0
+
+    display: block
+
+    width: 100%
+    height: 2px
+
+    background-color: #272727
+
+    &:first-child
+      width: 23px
+      top: 0
+
+    &:last-child
+      bottom: 0
+
+.hamburger__text
+  color: #2B2B2B
+  font-size: 20px
+  line-height: 25px
+  letter-spacing: .07em
+  text-transform: uppercase
+
+  transition: .25s ease-out
