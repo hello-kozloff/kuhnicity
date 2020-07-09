@@ -1,0 +1,1 @@
+$(document).ready(() => { /* page-header */ });
