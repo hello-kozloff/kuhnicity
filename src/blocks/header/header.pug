@@ -1,0 +1,34 @@
++b("header")(class="header")
+    +e("div")(class="navigation")
+        +e("div")(class="city-switcher")
+            include ../city-switcher/city-switcher
+
+        +e("nav")(class="menu")
+            +e("a")(href="#", class="menu-item") О компании
+            +e("a")(href="#", class="menu-item") Контакты
+            +e("a")(href="#", class="menu-item") Замер
+            +e("a")(href="#", class="menu-item") Рассрочка
+            +e("a")(href="#", class="menu-item") Аренда салонов
+
+        +e("div")(class="contact")
+            +e("a")(href="mailto:info@kuhnicity.ru", class="contact-item")
+                = "info@kuhnicity.ru"
+
+            +e("a")(href="#", class="contact-item")
+                = "Заказать звонок"
+
+            +e("a")(href="tel:74991354378", class="contact-item")
+                = "+7 (499) 135-43-78"
+
+    +e("div")(class="content")
+        +e("div")(class="catalog")
+            include ../hamburger/hamburger
+
+        +e("a")(href="#", class="logo")
+            +e("img")(src="images/logo.svg", alt="КухниСити")
+
+        +e("div")(class="calculator")
+            // .link
+            +b("a")(href="#", class="link")
+                = "Рассчитать кухню"
+            // #.link
