@@ -1,0 +1,127 @@
+@import "../../sass/abstracts/variables"
+@import "../../sass/layout/grid"
+
+.footer
+  margin-top: 45px
+  padding-top: 68px
+  box-sizing: border-box
+
+  border-top: 3px solid #ECECEC
+  background-color: #FAFAFA
+
+.footer__grid
+  padding: 0 46px
+  box-sizing: border-box
+
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.footer__item
+  //width: 100%
+
+.footer__category
+  color: #323232
+  font-size: 20px
+  line-height: 25px
+  letter-spacing: .135em
+  text-transform: uppercase
+
+.footer__menu
+  margin-top: 39px
+
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.footer__link
+  color: #6A6A6A
+  font-size: 20px
+  line-height: 42px
+  letter-spacing: .035em
+
+  text-decoration: none
+  outline: none
+
+  &:hover,
+  &:focus
+    color: $color-black
+
+.footer__phone
+  display: inline-block
+  margin-top: 98px
+
+  color: #252525
+  font-size: 25px
+  line-height: 31px
+  letter-spacing: 0.135em
+  text-transform: uppercase
+
+  text-decoration: none
+  outline: none
+
+.footer__workday
+  display: block
+  margin-top: 10px
+
+  color: #A0A0A0
+  font-size: 20px
+  line-height: 118%
+  letter-spacing: .035em
+
+.footer__social
+  margin-top: 35px
+
+  display: flex
+  align-items: center
+
+.footer__social-item
+  display: flex
+  align-items: center
+  justify-content: center
+
+  width: 46px
+  height: 46px
+
+  border: 1px solid #2B2B2B
+
+  &:not(:last-child)
+    margin-right: 9px
+
+.footer__content
+  padding: 0 46px
+  margin-top: 98px
+  box-sizing: border-box
+
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-color: $color-white
+
+  .footer__link
+    color: #A0A0A0
+    font-size: 16px
+    line-height: 42px
+    letter-spacing: .035em
+
+    &:hover,
+    &:focus
+      color: $color-black
+
+.footer__copyright
+  margin-right: 118px
+
+  color: #A0A0A0
+  font-size: 16px
+  line-height: 42px
+  letter-spacing: .035em
+
+.footer__payment
+  display: flex
+  align-items: center
+
+  opacity: .5
+  margin-left: auto
+
+  img:not(:first-child)
+    margin-left: 20px
